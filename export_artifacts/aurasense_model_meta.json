@@ -1,0 +1,27 @@
+{
+  "name": "AuraSense Stress Classifier",
+  "version": "v2025.10.25",
+  "export_time_utc": "2025-10-25T18:43:26Z",
+  "model_source": "tuned_model",
+  "framework": "scikit-learn",
+  "pipeline_steps": [
+    "prep",
+    "clf"
+  ],
+  "features_expected": [
+    "HR",
+    "HRV",
+    "BT",
+    "C_HR",
+    "C_HRV",
+    "C_BT",
+    "G_stress"
+  ],
+  "classes": [
+    "high",
+    "low",
+    "medium"
+  ],
+  "label_field": "StressLevel_rule",
+  "metrics_note": "See Colab Step 4.4/4.5 outputs for validation scores."
+}
